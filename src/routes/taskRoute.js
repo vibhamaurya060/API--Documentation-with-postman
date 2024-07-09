@@ -103,11 +103,7 @@ const taskRouter=Router();
  *     
  */
 
-
-
-
-
-
+// get all task
 
 taskRouter.get("/", role(["admin","user"]) ,async(req,res)=>{
     const todos=await taskModel.find();
